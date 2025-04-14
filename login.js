@@ -13,7 +13,7 @@ registerBtn.addEventListener('click', function() {
         password: registerPassword
     }
 
-    fetch("http://localhost:3000/users/signup", {
+    fetch("https://weatherapp-backend-steel.vercel.app/users/signup", {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData)
@@ -33,7 +33,7 @@ connectionBtn.addEventListener('click', function() {
         password: connectionPassword
     }
 
-    fetch("http://localhost:3000/users/signin", {
+    fetch("https://weatherapp-backend-steel.vercel.app/users/signin", {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData)
